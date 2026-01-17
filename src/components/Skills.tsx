@@ -17,6 +17,9 @@ const tools = [
   { name: 'GitHub', icon: '🐙' },
   { name: 'Linux', icon: '🐧' },
   { name: 'Git', icon: '📦' },
+  { name: 'Postman', icon: '📮' },
+  { name: 'Vercel', icon: '▲' },
+  { name: 'Netlify', icon: '🌐' },
 ];
 
 const SkillBar = ({ name, level }: { name: string; level: number }) => (

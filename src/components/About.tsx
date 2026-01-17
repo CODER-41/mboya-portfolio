@@ -10,9 +10,11 @@ const About = () => {
           {/* About text */}
           <div className="card-gradient border border-border rounded-lg p-8 glow-box">
             <p className="font-mono text-muted-foreground leading-relaxed mb-6">
-              I am a passionate <span className="text-primary font-semibold">Full-Stack Developer</span> currently 
-              studying at <span className="text-primary font-semibold">Moringa School</span> in Kenya. My mission 
-              is to build applications that are not only functional but also beautifully designed and performant.
+              I am a passionate <span className="text-primary font-semibold">Full-Stack Developer</span>. I graduated from 
+              <span className="text-primary font-semibold">Maseno University</span> with a degree in Mathematics and Physics, 
+              and upon completion, I joined <span className="text-primary font-semibold">Moringa School</span> in Kenya to 
+              pursue a career in software engineering. My mission is to build applications that are not only functional but 
+              also beautifully designed and performant.
             </p>
             <p className="font-mono text-muted-foreground leading-relaxed">
               With expertise ranging from modern frontend frameworks like <span className="text-foreground">React.js</span> to 
@@ -30,7 +32,7 @@ const About = () => {
               </div>
               <div>
                 <h3 className="font-mono font-semibold text-foreground">Education</h3>
-                <p className="font-mono text-sm text-muted-foreground">Moringa School, Kenya</p>
+                <p className="font-mono text-sm text-muted-foreground">Maseno University (Math & Physics) → Moringa School</p>
               </div>
             </div>
 
