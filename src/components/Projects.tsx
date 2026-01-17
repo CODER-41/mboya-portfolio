@@ -8,6 +8,8 @@ const projects = [
     tags: ['React.js', 'Tailwind CSS', 'Python', 'FastAPI'],
     type: 'Full-Stack',
     gradient: 'from-cyan-500/20 to-blue-500/20',
+    demoLink: 'https://snakepiece-events.onrender.com/',
+    codeLink: '#',
   },
   {
     title: 'Gym Fitness & Tracker CLI',
@@ -15,6 +17,8 @@ const projects = [
     tags: ['Python', 'SQLite', 'CLI', 'OOP'],
     type: 'Backend',
     gradient: 'from-green-500/20 to-emerald-500/20',
+    demoLink: '#',
+    codeLink: 'https://github.com/CODER-41/phase-3-project',
   },
   {
     title: 'E-Commerce Platform',
@@ -22,6 +26,8 @@ const projects = [
     tags: ['React.js', 'JavaScript', 'Flask', 'PostgreSQL'],
     type: 'Full-Stack',
     gradient: 'from-purple-500/20 to-pink-500/20',
+    demoLink: '#',
+    codeLink: '#',
   },
 ];
 
@@ -72,13 +78,27 @@ const Projects = () => {
 
                 {/* Actions */}
                 <div className="flex gap-3">
-                  <Button variant="outline" size="sm" className="font-mono text-xs border-muted-foreground/30 hover:border-primary hover:text-primary">
-                    <Github className="w-4 h-4 mr-2" />
-                    Code
+                  <Button 
+                    variant="outline" 
+                    size="sm" 
+                    className="font-mono text-xs border-muted-foreground/30 hover:border-primary hover:text-primary"
+                    asChild
+                  >
+                    <a href={project.codeLink} target="_blank" rel="noopener noreferrer">
+                      <Github className="w-4 h-4 mr-2" />
+                      Code
+                    </a>
                   </Button>
-                  <Button variant="outline" size="sm" className="font-mono text-xs border-muted-foreground/30 hover:border-primary hover:text-primary">
-                    <ExternalLink className="w-4 h-4 mr-2" />
-                    Demo
+                  <Button 
+                    variant="outline" 
+                    size="sm" 
+                    className="font-mono text-xs border-muted-foreground/30 hover:border-primary hover:text-primary"
+                    asChild
+                  >
+                    <a href={project.demoLink} target="_blank" rel="noopener noreferrer">
+                      <ExternalLink className="w-4 h-4 mr-2" />
+                      Demo
+                    </a>
                   </Button>
                 </div>
               </div>
