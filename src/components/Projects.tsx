@@ -26,7 +26,7 @@ const projects = [
     tags: ['React.js', 'JavaScript', 'Flask', 'PostgreSQL'],
     type: 'Full-Stack',
     gradient: 'from-purple-500/20 to-pink-500/20',
-    demoLink: '#',
+    demoLink: 'https://market-hub-roan.vercel.app',
     codeLink: '#',
   },
 ];
