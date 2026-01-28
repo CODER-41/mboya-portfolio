@@ -50,7 +50,7 @@ const Resume = () => {
                 className="font-mono"
                 asChild
               >
-                <a href={resumeUrl} download="Ronny_Mboya_Resume.pdf">
+                <a href="/resume.html" download="Ronny_Mboya_Resume.html">
                   <Download className="w-5 h-5 mr-2" />
                   Download Resume
                 </a>
@@ -61,7 +61,7 @@ const Resume = () => {
                 className="font-mono border-muted-foreground/30 hover:border-primary hover:text-primary"
                 asChild
               >
-                <a href={resumeUrl} target="_blank" rel="noopener noreferrer">
+                <a href="/resume.html" target="_blank" rel="noopener noreferrer">
                   <Eye className="w-5 h-5 mr-2" />
                   View Online
                 </a>
