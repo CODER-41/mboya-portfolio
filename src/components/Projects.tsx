@@ -12,6 +12,15 @@ const projects = [
     codeLink: '#',
   },
   {
+    title: 'Quantum Gear Electronics',
+    description: 'Full-stack e-commerce platform for buying electronics (phones, laptops, TVs) in Kenya. Features product catalog, shopping cart, search/filtering, and responsive design.',
+    tags: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Vercel'],
+    type: 'Full-Stack',
+    gradient: 'from-orange-500/20 to-amber-500/20',
+    demoLink: 'https://e-lectrical-shop.vercel.app/',
+    codeLink: 'https://github.com/gachezra/e-lectrical-shop',
+  },
+  {
     title: 'Gym Fitness & Tracker CLI',
     description: 'A command-line application for tracking gym workouts, exercises, and fitness progress. Built with Python featuring SQLite database for persistent data storage.',
     tags: ['Python', 'SQLite', 'CLI', 'OOP'],
@@ -21,7 +30,7 @@ const projects = [
     codeLink: 'https://github.com/CODER-41/phase-3-project',
   },
   {
-    title: 'E-Commerce Platform',
+    title: 'MarketHub E-Commerce Platform',
     description: 'A modern e-commerce solution with product catalog, shopping cart, user authentication, and order management. Responsive design for all devices.',
     tags: ['React.js', 'JavaScript', 'Flask', 'PostgreSQL'],
     type: 'Full-Stack',
