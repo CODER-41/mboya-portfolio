@@ -1,4 +1,4 @@
-import { Mail, Phone, Github, Linkedin, Send } from 'lucide-react';
+import { Mail, Phone, Github, Linkedin, Send, Paperclip } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const XIcon = () => (
@@ -112,6 +112,14 @@ const Contact = () => {
                   placeholder="Tell me about your project..."
                   className="w-full px-4 py-3 rounded-lg bg-muted border border-border font-mono text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors resize-none"
                 />
+              </div>
+              <div>
+                <label className="font-mono text-sm text-muted-foreground block mb-2">Attachment</label>
+                <label className="flex items-center gap-2 px-4 py-3 rounded-lg bg-muted border border-border font-mono text-muted-foreground hover:border-primary hover:text-primary cursor-pointer transition-colors">
+                  <Paperclip className="w-4 h-4" />
+                  <span>Attach file</span>
+                  <input type="file" className="hidden" />
+                </label>
               </div>
               <Button type="submit" className="w-full font-mono group">
                 Send Message

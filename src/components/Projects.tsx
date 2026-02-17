@@ -5,7 +5,7 @@ const projects = [
   {
     title: 'Snake Piece Events Kenya',
     description: 'A comprehensive events management website for organizing and discovering events across Kenya. Features event listings, booking system, and user authentication.',
-    tags: ['React.js', 'Tailwind CSS', 'Python', 'FastAPI'],
+    tags: ['React.js', 'Tailwind CSS', 'FastAPI'],
     type: 'Full-Stack',
     gradient: 'from-cyan-500/20 to-blue-500/20',
     demoLink: 'https://snakepiece-events.onrender.com/',
@@ -14,7 +14,7 @@ const projects = [
   {
     title: 'Quantum Gear Electronics',
     description: 'Full-stack e-commerce platform for buying electronics (phones, laptops, TVs) in Kenya. Features product catalog, shopping cart, search/filtering, and responsive design.',
-    tags: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Vercel'],
+    tags: ['React.js', 'JavaScript', 'Tailwind CSS', 'Python', 'Flask', 'PostgreSQL', 'Vercel'],
     type: 'Full-Stack',
     gradient: 'from-orange-500/20 to-amber-500/20',
     demoLink: 'https://e-lectrical-shop.vercel.app/',
