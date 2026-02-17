@@ -2,9 +2,6 @@ import { Download, FileText, Eye } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Resume = () => {
-  // Replace this with your actual resume PDF path
-  const resumeUrl = '/resume.pdf';
-
   return (
     <section id="resume" className="py-20 relative">
       <div className="container mx-auto px-6">
