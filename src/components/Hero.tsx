@@ -33,7 +33,7 @@ const Hero = () => {
         <div className="max-w-2xl border-l-2 border-primary/50 pl-6 mb-10 animate-fade-in" style={{ animationDelay: '0.3s' }}>
           <p className="font-mono text-muted-foreground leading-relaxed">
             I'm <span className="text-foreground font-semibold">Ronny Mboya</span>. A passionate full-stack developer
-            and student at <span className="text-primary">Moringa School, Kenya</span>. I build modern web applications
+            based in <span className="text-primary">Kenya</span>. I build modern web applications
             from frontend to backend.
           </p>
         </div>
