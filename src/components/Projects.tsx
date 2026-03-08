@@ -3,6 +3,15 @@ import { Button } from '@/components/ui/button';
 
 const projects = [
   {
+    title: 'Katch School Website',
+    description: 'A full-stack school website and content management platform built for Kakamega School, featuring a public-facing site, real-time admin dashboard, email notifications, cloud database, and PWA support.',
+    tags: ['React', 'TypeScript', 'Shadcn UI', 'Python', 'Flask', 'PostgreSQL'],
+    type: 'Full-Stack',
+    gradient: 'from-blue-500/20 to-indigo-500/20',
+    demoLink: 'https://katch-jade.vercel.app/',
+    codeLink: 'https://github.com/CODER-41/katch',
+  },
+  {
     title: 'Snake Piece Events Kenya',
     description: 'A comprehensive events management website for organizing and discovering events across Kenya. Features event listings, booking system, and user authentication.',
     tags: ['React.js', 'Tailwind CSS', 'FastAPI'],
