@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 const projects = [
   {
     title: 'Katch School Website',
-    description: 'A full-stack school website and content management platform built for Kakamega School, featuring a public-facing site, real-time admin dashboard, email notifications, cloud database, and PWA support.',
+    description: 'A full-stack school website and content management platform built for Katch, featuring a public-facing site, real-time admin dashboard, email notifications, cloud database, and PWA support.',
     tags: ['React', 'TypeScript', 'Shadcn UI', 'Python', 'Flask', 'PostgreSQL'],
     type: 'Full-Stack',
     gradient: 'from-blue-500/20 to-indigo-500/20',
