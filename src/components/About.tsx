@@ -10,17 +10,14 @@ const About = () => {
           {/* About text */}
           <div className="card-gradient border border-border rounded-lg p-8 glow-box">
             <p className="font-mono text-muted-foreground leading-relaxed mb-6">
-              I am a passionate <span className="text-primary font-semibold">Full-Stack Developer</span>. I graduated from 
-              <span className="text-primary font-semibold">Maseno University</span> with a degree in Mathematics and Physics, 
-              and upon completion, I joined <span className="text-primary font-semibold">Moringa School</span> in Kenya to 
-              pursue a career in software engineering. My mission is to build applications that are not only functional but 
-              also beautifully designed and performant.
+              I am a <span className="text-primary font-semibold">Full-Stack Developer</span> who turns ideas into fast, elegant, production-ready software. 
+              I hold a degree in Mathematics and Physics from <span className="text-primary font-semibold">Maseno University</span> — a foundation that sharpened my problem-solving instincts and analytical thinking. 
+              I then completed an intensive Software Engineering bootcamp at <span className="text-primary font-semibold">Moringa School</span>, where I honed my craft building real-world, full-stack applications from the ground up.
             </p>
             <p className="font-mono text-muted-foreground leading-relaxed">
-              With expertise ranging from modern frontend frameworks like <span className="text-foreground">React.js</span> to 
-              robust backend technologies like <span className="text-foreground">Python</span> and <span className="text-foreground">FastAPI</span>, 
-              I bridge the gap between design and functionality. I specialize in creating seamless user experiences 
-              backed by solid, scalable architectures.
+              I work across the full stack — crafting responsive, intuitive interfaces with <span className="text-foreground">React.js</span>, and engineering reliable backends with <span className="text-foreground">Python</span> and <span className="text-foreground">FastAPI</span>. 
+              What sets me apart is the rare combination of mathematical precision and creative design sense — I don't just build features, I build experiences that are scalable, performant, and delightful to use. 
+              If you're looking for a developer who brings both technical depth and genuine passion to every project, you're in the right place.
             </p>
           </div>
 

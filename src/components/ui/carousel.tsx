@@ -19,7 +19,7 @@ type CarouselProps = {
 
 type CarouselContextProps = {
   carouselRef: ReturnType<typeof useEmblaCarousel>[0];
-  api: ReturnType<typeof useEmblaCarousel>[1];
+  emblaApi: ReturnType<typeof useEmblaCarousel>[1];
   scrollPrev: () => void;
   scrollNext: () => void;
   canScrollPrev: boolean;
@@ -60,11 +60,15 @@ const Carousel = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivEl
     }, []);
 
     const scrollPrev = React.useCallback(() => {
-      api?.scrollPrev();
+      if (api) {
+        api.scrollPrev();
+      }
     }, [api]);
 
     const scrollNext = React.useCallback(() => {
-      api?.scrollNext();
+      if (api) {
+        api.scrollNext();
+      }
     }, [api]);
 
     const handleKeyDown = React.useCallback(
@@ -98,7 +102,9 @@ const Carousel = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivEl
       api.on("select", onSelect);
 
       return () => {
-        api?.off("select", onSelect);
+        if (api) {
+          api.off("select", onSelect);
+        }
       };
     }, [api, onSelect]);
 
@@ -106,7 +112,7 @@ const Carousel = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivEl
       <CarouselContext.Provider
         value={{
           carouselRef,
-          api: api,
+          emblaApi: api,
           opts,
           orientation: orientation || (opts?.axis === "y" ? "vertical" : "horizontal"),
           scrollPrev,

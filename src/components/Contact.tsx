@@ -30,6 +30,17 @@ const socialLinks = [
 ];
 
 const Contact = () => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const formData = new FormData(e.currentTarget);
+    const name = formData.get('name');
+    const email = formData.get('email');
+    const message = formData.get('message');
+    
+    const mailtoLink = `mailto:mboyaronny41@gmail.com?subject=Portfolio Contact from ${name}&body=From: ${name}%0D%0AEmail: ${email}%0D%0A%0D%0A${message}`;
+    window.location.href = mailtoLink;
+  };
+
   return (
     <section id="contact" className="py-20 bg-secondary/20">
       <div className="container mx-auto px-6">
@@ -75,6 +86,8 @@ const Contact = () => {
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
+                  title={social.label}
+                  aria-label={social.label}
                   className="w-12 h-12 rounded-lg border border-border bg-card flex items-center justify-center hover:border-primary hover:bg-primary/10 transition-all duration-300"
                 >
                   <social.icon className="w-5 h-5 text-muted-foreground hover:text-primary" />
@@ -88,11 +101,13 @@ const Contact = () => {
             <h3 className="font-mono text-xl font-semibold text-foreground mb-6">
               Send a message
             </h3>
-            <form className="space-y-6">
+            <form className="space-y-6" onSubmit={handleSubmit}>
               <div>
                 <label className="font-mono text-sm text-muted-foreground block mb-2">Name</label>
                 <input
                   type="text"
+                  name="name"
+                  required
                   placeholder="Your name"
                   className="w-full px-4 py-3 rounded-lg bg-muted border border-border font-mono text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors"
                 />
@@ -101,6 +116,8 @@ const Contact = () => {
                 <label className="font-mono text-sm text-muted-foreground block mb-2">Email</label>
                 <input
                   type="email"
+                  name="email"
+                  required
                   placeholder="your@email.com"
                   className="w-full px-4 py-3 rounded-lg bg-muted border border-border font-mono text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors"
                 />
@@ -109,6 +126,8 @@ const Contact = () => {
                 <label className="font-mono text-sm text-muted-foreground block mb-2">Message</label>
                 <textarea
                   rows={4}
+                  name="message"
+                  required
                   placeholder="Tell me about your project..."
                   className="w-full px-4 py-3 rounded-lg bg-muted border border-border font-mono text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors resize-none"
                 />
@@ -117,8 +136,8 @@ const Contact = () => {
                 <label className="font-mono text-sm text-muted-foreground block mb-2">Attachment</label>
                 <label className="flex items-center gap-2 px-4 py-3 rounded-lg bg-muted border border-border font-mono text-muted-foreground hover:border-primary hover:text-primary cursor-pointer transition-colors">
                   <Paperclip className="w-4 h-4" />
-                  <span>Attach file</span>
-                  <input type="file" className="hidden" />
+                  <span>Attach file (opens email client)</span>
+                  <input type="file" className="hidden" disabled />
                 </label>
               </div>
               <Button type="submit" className="w-full font-mono group">
